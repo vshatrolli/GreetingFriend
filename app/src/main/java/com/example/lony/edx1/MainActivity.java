@@ -1,6 +1,7 @@
 package com.example.lony.edx1;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,9 +27,14 @@ public class MainActivity extends AppCompatActivity  {
         greetButton = (Button) findViewById(R.id.greetButton);
 
         greetButton.setOnClickListener((a)->{
-            TextView textMessage = (TextView) findViewById(R.id.textView);
+            Intent in = new Intent(this,ShowMessage.class);
+
             EditText editFriendName = (EditText) findViewById(R.id.editFriendName);
             String friendName = editFriendName.getText().toString();
+
+
+
+
             System.out.println(getString(R.string.goodafternoon));
 
             String greetingMsg;
@@ -42,8 +48,9 @@ public class MainActivity extends AppCompatActivity  {
             else
                 greetingMsg=getString(R.string.goodnight);
 
-            
-                textMessage.setText(greetingMsg+friendName+"!");
+
+            in.putExtra("message", greetingMsg+" "+friendName+"!");
+            startActivity(in);
 
 
 

@@ -7,7 +7,7 @@ package com.example.lony.edx1;
 
 /**
  * Created by muppala on 7/6/16.
- */
+
         import android.test.ActivityInstrumentationTestCase2;
         import org.junit.Before;
 
@@ -24,7 +24,7 @@ package com.example.lony.edx1;
 
 /**
  * Created by muppala on 1/5/15.
- */
+
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
     private MainActivity mainActivity;
@@ -65,4 +65,4 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 
     }
 
-}
+}*/
