@@ -5,4 +5,11 @@
     <string name="goodmorning">Good Morning </string>
     <string name="goodafternoon">Good Afternoon </string>
     <string name="goodevening">Good Evening </string>
+
+    <string-array name="friends">
+        <item>John</item>
+        <item>Paul</item>
+        <item>George</item>
+        <item>Ringo</item>
+    </string-array>
 </resources>
